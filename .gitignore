@@ -1,15 +1,66 @@
+# ========== Android Studio ==========
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+
+# ========== Build ==========
+.gradle/
+build/
+app/build/
+*/build/
+
+# ========== Local Configuration ==========
 local.properties
+
+# ========== OS-specific ==========
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ========== Log / Cache ==========
+*.log
+.cache/
+captures/
+.externalNativeBuild/
+
+# ========== APKs ==========
+*.apk
+*.ap_
+
+# ========== Keystore / Secrets ==========
+*.jks
+*.keystore
+*.pem
+*.key
+*.crt
+
+# ========== Firebase 관련 ==========
+google-services.json
+firebase-debug.log
+crashlytics-build.properties
+
+# ========== Gradle Wrapper ==========
+/gradle/wrapper/gradle-wrapper.properties
+/gradle/wrapper/gradle-wrapper.jar
+
+# ========== Test Coverage ==========
+*.ec
+
+# ========== Kotlin/Java Specific ==========
+*.class
+*.jar
+*.war
+*.ear
+
+# ========== Environment Config ==========
+.env
+secrets.properties
+apikey.json
+
+# ========== IDE-specific ==========
+*.ipr
+*.iws
+out/
