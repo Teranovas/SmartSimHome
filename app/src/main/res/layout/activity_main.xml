@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lightLabel"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- 온도 -->
+
     <TextView
         android:id="@+id/temperatureLabel"
         android:layout_width="wrap_content"
