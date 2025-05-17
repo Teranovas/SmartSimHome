@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#FAFAFA">
+
+    <!-- 조명 -->
+    <TextView
+        android:id="@+id/lightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💡 조명"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Switch
+        android:id="@+id/lightSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="켜기 / 끄기"
+        app:layout_constraintTop_toBottomOf="@+id/lightLabel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- 온도 -->
+    <TextView
+        android:id="@+id/temperatureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌡 온도 조절"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/lightSwitch"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <SeekBar
+        android:id="@+id/temperatureSeekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="22"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 온도: 22°C"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureSeekBar"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- 창문 -->
+    <TextView
+        android:id="@+id/windowLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🪟 창문 상태"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureValue"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/windowToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="열기 / 닫기"
+        app:layout_constraintTop_toBottomOf="@+id/windowLabel"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/windowStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재 상태: 닫힘"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/windowToggleButton"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
